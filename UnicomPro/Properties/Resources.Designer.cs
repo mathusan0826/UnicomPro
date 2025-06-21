@@ -73,6 +73,26 @@ namespace UnicomPro.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon_1_min {
+            get {
+                object obj = ResourceManager.GetObject("icon-1-min", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap industry_min {
+            get {
+                object obj = ResourceManager.GetObject("industry-min", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap UNICOM_TIC_LOGO_2048x773 {
             get {
                 object obj = ResourceManager.GetObject("UNICOM-TIC_LOGO-2048x773", resourceCulture);

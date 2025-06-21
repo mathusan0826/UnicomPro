@@ -110,5 +110,10 @@ namespace UnicomPro.View
             txtSubjectName.Clear();
             comboBoxCourse.SelectedIndex = 0;
         }
+
+        private void SubjectForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

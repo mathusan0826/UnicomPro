@@ -89,6 +89,7 @@
             // 
             // dataGridViewSubjects
             // 
+            this.dataGridViewSubjects.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dataGridViewSubjects.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewSubjects.Location = new System.Drawing.Point(12, 165);
             this.dataGridViewSubjects.Name = "dataGridViewSubjects";
@@ -117,6 +118,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.comboBoxCourse);
             this.Controls.Add(this.txtSubjectName);
@@ -126,8 +128,10 @@
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.labelCourse);
             this.Controls.Add(this.labelSubjectName);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "SubjectForm";
             this.Text = "SubjectForm";
+            this.Load += new System.EventHandler(this.SubjectForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSubjects)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

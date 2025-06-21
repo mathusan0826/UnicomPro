@@ -71,10 +71,7 @@ namespace UnicomPro.Database
                 {
                     cmd.ExecuteNonQuery();
                 }
-                //using (var cmd = new SQLiteCommand("PRAGMA foreign_keys = ON;", connection))
-                //{
-                //    cmd.ExecuteNonQuery();
-                //}
+               
 
                 var createTimetableTable = @"
                     CREATE TABLE IF NOT EXISTS Timetable (
@@ -118,15 +115,15 @@ namespace UnicomPro.Database
 
 
                 string query = @"
-            CREATE TABLE IF NOT EXISTS Attendance (
-                AttendanceID INTEGER PRIMARY KEY AUTOINCREMENT,
-                StudentID INTEGER NOT NULL,
-                SubjectID INTEGER NOT NULL,
-                Date TEXT NOT NULL,
-                Status TEXT NOT NULL,
-                UNIQUE(StudentID, SubjectID, Date),
-                FOREIGN KEY (StudentID) REFERENCES Students(StudentID),
-                FOREIGN KEY (SubjectID) REFERENCES Subjects(SubjectID)
+                 CREATE TABLE IF NOT EXISTS Attendance (
+                       AttendanceID INTEGER PRIMARY KEY AUTOINCREMENT,
+                      StudentID INTEGER NOT NULL,
+                      SubjectID INTEGER NOT NULL,
+                      Date TEXT NOT NULL,
+                      Status TEXT NOT NULL,
+                      UNIQUE(StudentID, SubjectID, Date),
+                      FOREIGN KEY (StudentID) REFERENCES Students(StudentID),
+                      FOREIGN KEY (SubjectID) REFERENCES Subjects(SubjectID)
             );";
 
                 using (var cmd = new SQLiteCommand(query, connection))
@@ -134,29 +131,7 @@ namespace UnicomPro.Database
                     cmd.ExecuteNonQuery();
                 }
 
-               // MessageBox.Show("Attendance table created successfully!");
-
-                //Main dash board
-                //string createLoginLogTable = @"
-                //    CREATE TABLE IF NOT EXISTS DashboardSessions (
-                //        SessionID INTEGER PRIMARY KEY AUTOINCREMENT,
-                //        UserID INTEGER,
-                //        Username TEXT NOT NULL,
-                //        Role TEXT NOT NULL,
-                //        LoginTime TEXT NOT NULL,
-                //        LogoutTime TEXT,
-                //        ActivityNote TEXT
-                //    );";
-
-                //using (var command = new SQLiteCommand(createLoginLogTable, connection))
-                //{
-                //    command.ExecuteNonQuery();
-                //}
-
-                //MessageBox.Show("DashboardSessions table created.");
-
-                //MainMenu end
-
+              
                 var createLecturesTable = @"
     CREATE TABLE IF NOT EXISTS Lectures (
         LectureID INTEGER PRIMARY KEY AUTOINCREMENT,

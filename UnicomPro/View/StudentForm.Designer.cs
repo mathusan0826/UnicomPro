@@ -114,6 +114,7 @@
             // 
             // dataGridViewStudents
             // 
+            this.dataGridViewStudents.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dataGridViewStudents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewStudents.Location = new System.Drawing.Point(12, 188);
             this.dataGridViewStudents.Name = "dataGridViewStudents";
@@ -127,6 +128,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dataGridViewStudents);
             this.Controls.Add(this.btnDeleteStudent);

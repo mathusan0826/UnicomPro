@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnStudents = new System.Windows.Forms.Button();
             this.btnTimetable = new System.Windows.Forms.Button();
@@ -42,15 +43,18 @@
             this.btnExams = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.btnStudents);
             this.panel1.Controls.Add(this.btnTimetable);
@@ -69,9 +73,19 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(61, 127);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(147, 42);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Admin";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(61, 390);
+            this.button2.Location = new System.Drawing.Point(61, 427);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(147, 35);
             this.button2.TabIndex = 2;
@@ -81,7 +95,7 @@
             // 
             // btnStudents
             // 
-            this.btnStudents.Location = new System.Drawing.Point(61, 123);
+            this.btnStudents.Location = new System.Drawing.Point(61, 216);
             this.btnStudents.Name = "btnStudents";
             this.btnStudents.Size = new System.Drawing.Size(147, 35);
             this.btnStudents.TabIndex = 0;
@@ -91,7 +105,7 @@
             // 
             // btnTimetable
             // 
-            this.btnTimetable.Location = new System.Drawing.Point(61, 339);
+            this.btnTimetable.Location = new System.Drawing.Point(61, 386);
             this.btnTimetable.Name = "btnTimetable";
             this.btnTimetable.Size = new System.Drawing.Size(147, 35);
             this.btnTimetable.TabIndex = 5;
@@ -101,7 +115,7 @@
             // 
             // btnLecture
             // 
-            this.btnLecture.Location = new System.Drawing.Point(61, 72);
+            this.btnLecture.Location = new System.Drawing.Point(61, 175);
             this.btnLecture.Name = "btnLecture";
             this.btnLecture.Size = new System.Drawing.Size(147, 35);
             this.btnLecture.TabIndex = 9;
@@ -114,15 +128,16 @@
             this.lblWelcome.AutoSize = true;
             this.lblWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWelcome.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lblWelcome.Location = new System.Drawing.Point(54, 12);
+            this.lblWelcome.Location = new System.Drawing.Point(69, 45);
             this.lblWelcome.Name = "lblWelcome";
             this.lblWelcome.Size = new System.Drawing.Size(160, 38);
             this.lblWelcome.TabIndex = 8;
             this.lblWelcome.Text = "Welcome";
+            this.lblWelcome.Click += new System.EventHandler(this.lblWelcome_Click);
             // 
             // btnCourses
             // 
-            this.btnCourses.Location = new System.Drawing.Point(61, 179);
+            this.btnCourses.Location = new System.Drawing.Point(61, 257);
             this.btnCourses.Name = "btnCourses";
             this.btnCourses.Size = new System.Drawing.Size(147, 38);
             this.btnCourses.TabIndex = 1;
@@ -132,7 +147,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(61, 235);
+            this.button1.Location = new System.Drawing.Point(61, 301);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(147, 35);
             this.button1.TabIndex = 10;
@@ -142,7 +157,7 @@
             // 
             // btnAttendance
             // 
-            this.btnAttendance.Location = new System.Drawing.Point(61, 283);
+            this.btnAttendance.Location = new System.Drawing.Point(61, 342);
             this.btnAttendance.Name = "btnAttendance";
             this.btnAttendance.Size = new System.Drawing.Size(147, 38);
             this.btnAttendance.TabIndex = 6;
@@ -162,7 +177,7 @@
             // 
             // btnMarks
             // 
-            this.btnMarks.Location = new System.Drawing.Point(61, 495);
+            this.btnMarks.Location = new System.Drawing.Point(61, 509);
             this.btnMarks.Name = "btnMarks";
             this.btnMarks.Size = new System.Drawing.Size(147, 35);
             this.btnMarks.TabIndex = 4;
@@ -172,7 +187,7 @@
             // 
             // btnExams
             // 
-            this.btnExams.Location = new System.Drawing.Point(61, 440);
+            this.btnExams.Location = new System.Drawing.Point(61, 468);
             this.btnExams.Name = "btnExams";
             this.btnExams.Size = new System.Drawing.Size(147, 35);
             this.btnExams.TabIndex = 3;
@@ -202,23 +217,31 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // button3
+            // panel3
             // 
-            this.button3.Location = new System.Drawing.Point(411, 203);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(169, 42);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Admin";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.panel3.Controls.Add(this.flowLayoutPanel1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(295, 146);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(926, 446);
+            this.panel3.TabIndex = 2;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, -3);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(926, 449);
+            this.flowLayoutPanel1.TabIndex = 0;
+            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // MainDashboardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.ClientSize = new System.Drawing.Size(1221, 592);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "MainDashboardForm";
@@ -228,6 +251,7 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -249,5 +273,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

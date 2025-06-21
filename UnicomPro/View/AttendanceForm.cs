@@ -108,6 +108,11 @@ namespace UnicomPro.View
         {
 
         }
+
+        private void AttendanceForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
     }
 

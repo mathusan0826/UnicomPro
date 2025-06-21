@@ -86,6 +86,7 @@
             // 
             // dataGridViewExams
             // 
+            this.dataGridViewExams.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dataGridViewExams.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewExams.Location = new System.Drawing.Point(12, 123);
             this.dataGridViewExams.Name = "dataGridViewExams";
@@ -99,6 +100,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(640, 360);
             this.Controls.Add(this.dataGridViewExams);
             this.Controls.Add(this.btnDeleteExam);
@@ -106,6 +108,7 @@
             this.Controls.Add(this.btnAddExam);
             this.Controls.Add(this.txtExamName);
             this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "ExamForm";
             this.Text = "ExamForm";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewExams)).EndInit();

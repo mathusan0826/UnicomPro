@@ -42,6 +42,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Thistle;
             this.label1.Location = new System.Drawing.Point(224, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(73, 16);
@@ -50,6 +51,7 @@
             // 
             // txtUsername
             // 
+            this.txtUsername.BackColor = System.Drawing.Color.AliceBlue;
             this.txtUsername.Location = new System.Drawing.Point(332, 52);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(100, 22);
@@ -65,6 +67,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Thistle;
             this.label2.Location = new System.Drawing.Point(224, 103);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 16);
@@ -73,36 +76,40 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(222, 155);
+            this.btnAdd.BackColor = System.Drawing.Color.Violet;
+            this.btnAdd.Location = new System.Drawing.Point(222, 151);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.Size = new System.Drawing.Size(90, 27);
             this.btnAdd.TabIndex = 4;
             this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(332, 155);
+            this.btnUpdate.BackColor = System.Drawing.Color.Violet;
+            this.btnUpdate.Location = new System.Drawing.Point(332, 151);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.Size = new System.Drawing.Size(94, 27);
             this.btnUpdate.TabIndex = 5;
             this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(432, 155);
+            this.btnDelete.BackColor = System.Drawing.Color.Violet;
+            this.btnDelete.Location = new System.Drawing.Point(432, 151);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.Size = new System.Drawing.Size(83, 27);
             this.btnDelete.TabIndex = 6;
             this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.button3_Click);
             // 
             // dataGridViewAdmins
             // 
+            this.dataGridViewAdmins.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dataGridViewAdmins.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewAdmins.Location = new System.Drawing.Point(21, 202);
             this.dataGridViewAdmins.Name = "dataGridViewAdmins";
@@ -116,6 +123,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dataGridViewAdmins);
             this.Controls.Add(this.btnDelete);

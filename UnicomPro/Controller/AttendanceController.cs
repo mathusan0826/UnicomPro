@@ -33,7 +33,6 @@ namespace UnicomPro.Controller
             }
             return list;
         }
-
         public void AddOrUpdate(Attendance a)
         {
             using (var conn = Connection.GetConnection())

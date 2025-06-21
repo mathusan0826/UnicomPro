@@ -86,6 +86,7 @@
             // 
             // dataGridViewCourses
             // 
+            this.dataGridViewCourses.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dataGridViewCourses.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewCourses.Location = new System.Drawing.Point(12, 167);
             this.dataGridViewCourses.Name = "dataGridViewCourses";
@@ -99,6 +100,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dataGridViewCourses);
             this.Controls.Add(this.button3);

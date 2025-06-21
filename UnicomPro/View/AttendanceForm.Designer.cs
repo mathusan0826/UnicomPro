@@ -78,6 +78,7 @@
             // 
             // dgvAttendance
             // 
+            this.dgvAttendance.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dgvAttendance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAttendance.Location = new System.Drawing.Point(16, 171);
             this.dgvAttendance.Name = "dgvAttendance";
@@ -106,6 +107,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.datePicker);
             this.Controls.Add(this.cmbSubject);
@@ -116,6 +118,7 @@
             this.Controls.Add(this.label1);
             this.Name = "AttendanceForm";
             this.Text = "AttendanceForm";
+            this.Load += new System.EventHandler(this.AttendanceForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAttendance)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

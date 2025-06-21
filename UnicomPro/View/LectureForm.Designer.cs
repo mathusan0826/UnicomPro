@@ -105,6 +105,7 @@
             // 
             // dataGridViewLectures
             // 
+            this.dataGridViewLectures.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dataGridViewLectures.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewLectures.Location = new System.Drawing.Point(153, 177);
             this.dataGridViewLectures.Name = "dataGridViewLectures";
@@ -118,6 +119,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dataGridViewLectures);
             this.Controls.Add(this.comboBoxCourse);

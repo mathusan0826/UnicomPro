@@ -84,7 +84,7 @@
             // 
             // textPass
             // 
-            this.textPass.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.textPass.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textPass.Location = new System.Drawing.Point(477, 182);
             this.textPass.Name = "textPass";
             this.textPass.Size = new System.Drawing.Size(235, 22);
@@ -110,7 +110,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.BackColor = System.Drawing.Color.SaddleBrown;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textPass);
