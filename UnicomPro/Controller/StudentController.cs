@@ -36,7 +36,7 @@ namespace UnicomPro.Controller
                         StudentID = reader.GetInt32(0),
                         StudentName = reader.GetString(1),
                         
-                        CourseID = reader.IsDBNull(3) ? 0 : reader.GetInt32(2)
+                        CourseID = reader.IsDBNull(2) ? 0 : reader.GetInt32(2)
                     });
                 }
             }

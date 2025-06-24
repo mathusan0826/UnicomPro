@@ -33,19 +33,14 @@ namespace UnicomPro.View
             String password = textPass.Text;
             if (username =="admin" && password =="admin")
             {
-                MessageBox.Show("Login Sucess");
+                MessageBox.Show("Admin Login Sucess");
                 MainDashboardForm mainDashboardForm = new MainDashboardForm();
                 mainDashboardForm.Show();
                 this.Hide();
             }
             else
             {
-                MessageBox.Show("Login Error","info",MessageBoxButtons.OK);
-
-            
-
-             
-
+                MessageBox.Show("Admin Login Error","info",MessageBoxButtons.OK);
 
             }
         }
@@ -57,6 +52,70 @@ namespace UnicomPro.View
 
         private void LoginForm_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            String username = textUser.Text;
+            String password = textPass.Text;
+            if (username == "staff" && password == "staff")
+            {
+                MessageBox.Show("Staff Login Sucess");
+                //MainDashboardForm mainDashboardForm = new MainDashboardForm();
+                //mainDashboardForm.Show();
+                //this.Hide();
+                MessageBox.Show("Lecture Login Sucess");
+                StaffDashboardForm staffDashboardForm = new StaffDashboardForm();
+                staffDashboardForm.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show(" Staff Login Error", "info", MessageBoxButtons.OK);
+
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            String username = textUser.Text;
+            String password = textPass.Text;
+            if (username == "lec" && password == "lec")
+            {
+                LectureDashboardForm lectureDashboardForm = new LectureDashboardForm();
+                lectureDashboardForm.Show();
+                this.Hide();
+                //MainDashboardForm mainDashboardForm = new MainDashboardForm();
+                //mainDashboardForm.Show();
+                //this.Hide();
+            }
+            else
+            {
+                MessageBox.Show(" Lecture Login Error", "info", MessageBoxButtons.OK);
+
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            String username = textUser.Text;
+            String password = textPass.Text;
+            if (username == "student" && password == "student")
+            {
+                MessageBox.Show(" Student  Login Sucess");
+                StudentDashboardForm studentDashboardForm = new StudentDashboardForm();
+                studentDashboardForm.Show();
+                this.Hide();
+                //MainDashboardForm mainDashboardForm = new MainDashboardForm();
+                //mainDashboardForm.Show();
+                //this.Hide();
+            }
+            else
+            {
+                MessageBox.Show(" Student Login Error", "info", MessageBoxButtons.OK);
+
+            }
 
         }
     }

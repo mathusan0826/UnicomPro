@@ -40,7 +40,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(190, 32);
+            this.label1.Location = new System.Drawing.Point(187, 207);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 16);
             this.label1.TabIndex = 0;
@@ -49,14 +49,14 @@
             // 
             // txtExamName
             // 
-            this.txtExamName.Location = new System.Drawing.Point(269, 26);
+            this.txtExamName.Location = new System.Drawing.Point(306, 207);
             this.txtExamName.Name = "txtExamName";
-            this.txtExamName.Size = new System.Drawing.Size(173, 22);
+            this.txtExamName.Size = new System.Drawing.Size(244, 22);
             this.txtExamName.TabIndex = 1;
             // 
             // btnAddExam
             // 
-            this.btnAddExam.Location = new System.Drawing.Point(167, 69);
+            this.btnAddExam.Location = new System.Drawing.Point(190, 255);
             this.btnAddExam.Name = "btnAddExam";
             this.btnAddExam.Size = new System.Drawing.Size(80, 26);
             this.btnAddExam.TabIndex = 2;
@@ -66,7 +66,7 @@
             // 
             // btnUpdateExam
             // 
-            this.btnUpdateExam.Location = new System.Drawing.Point(269, 69);
+            this.btnUpdateExam.Location = new System.Drawing.Point(336, 255);
             this.btnUpdateExam.Name = "btnUpdateExam";
             this.btnUpdateExam.Size = new System.Drawing.Size(77, 26);
             this.btnUpdateExam.TabIndex = 3;
@@ -76,7 +76,7 @@
             // 
             // btnDeleteExam
             // 
-            this.btnDeleteExam.Location = new System.Drawing.Point(393, 69);
+            this.btnDeleteExam.Location = new System.Drawing.Point(463, 255);
             this.btnDeleteExam.Name = "btnDeleteExam";
             this.btnDeleteExam.Size = new System.Drawing.Size(87, 26);
             this.btnDeleteExam.TabIndex = 4;
@@ -86,13 +86,13 @@
             // 
             // dataGridViewExams
             // 
-            this.dataGridViewExams.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dataGridViewExams.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
             this.dataGridViewExams.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewExams.Location = new System.Drawing.Point(12, 123);
+            this.dataGridViewExams.Location = new System.Drawing.Point(101, 297);
             this.dataGridViewExams.Name = "dataGridViewExams";
             this.dataGridViewExams.RowHeadersWidth = 51;
             this.dataGridViewExams.RowTemplate.Height = 24;
-            this.dataGridViewExams.Size = new System.Drawing.Size(620, 225);
+            this.dataGridViewExams.Size = new System.Drawing.Size(683, 225);
             this.dataGridViewExams.TabIndex = 5;
             this.dataGridViewExams.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewExams_CellContentClick);
             // 
@@ -101,7 +101,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
-            this.ClientSize = new System.Drawing.Size(640, 360);
+            this.ClientSize = new System.Drawing.Size(842, 534);
             this.Controls.Add(this.dataGridViewExams);
             this.Controls.Add(this.btnDeleteExam);
             this.Controls.Add(this.btnUpdateExam);

@@ -42,7 +42,7 @@
             // labelSubjectName
             // 
             this.labelSubjectName.AutoSize = true;
-            this.labelSubjectName.Location = new System.Drawing.Point(101, 42);
+            this.labelSubjectName.Location = new System.Drawing.Point(196, 162);
             this.labelSubjectName.Name = "labelSubjectName";
             this.labelSubjectName.Size = new System.Drawing.Size(95, 16);
             this.labelSubjectName.TabIndex = 0;
@@ -51,7 +51,7 @@
             // labelCourse
             // 
             this.labelCourse.AutoSize = true;
-            this.labelCourse.Location = new System.Drawing.Point(101, 68);
+            this.labelCourse.Location = new System.Drawing.Point(196, 205);
             this.labelCourse.Name = "labelCourse";
             this.labelCourse.Size = new System.Drawing.Size(53, 16);
             this.labelCourse.TabIndex = 1;
@@ -59,7 +59,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(167, 111);
+            this.btnAdd.Location = new System.Drawing.Point(199, 252);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 4;
@@ -69,7 +69,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(261, 111);
+            this.btnUpdate.Location = new System.Drawing.Point(309, 252);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnUpdate.TabIndex = 5;
@@ -79,7 +79,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(357, 111);
+            this.btnDelete.Location = new System.Drawing.Point(411, 252);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 6;
@@ -89,9 +89,9 @@
             // 
             // dataGridViewSubjects
             // 
-            this.dataGridViewSubjects.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dataGridViewSubjects.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
             this.dataGridViewSubjects.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewSubjects.Location = new System.Drawing.Point(12, 165);
+            this.dataGridViewSubjects.Location = new System.Drawing.Point(12, 294);
             this.dataGridViewSubjects.Name = "dataGridViewSubjects";
             this.dataGridViewSubjects.RowHeadersWidth = 51;
             this.dataGridViewSubjects.RowTemplate.Height = 24;
@@ -101,7 +101,7 @@
             // 
             // txtSubjectName
             // 
-            this.txtSubjectName.Location = new System.Drawing.Point(212, 36);
+            this.txtSubjectName.Location = new System.Drawing.Point(309, 156);
             this.txtSubjectName.Name = "txtSubjectName";
             this.txtSubjectName.Size = new System.Drawing.Size(200, 22);
             this.txtSubjectName.TabIndex = 8;
@@ -109,7 +109,7 @@
             // comboBoxCourse
             // 
             this.comboBoxCourse.FormattingEnabled = true;
-            this.comboBoxCourse.Location = new System.Drawing.Point(212, 68);
+            this.comboBoxCourse.Location = new System.Drawing.Point(309, 205);
             this.comboBoxCourse.Name = "comboBoxCourse";
             this.comboBoxCourse.Size = new System.Drawing.Size(200, 24);
             this.comboBoxCourse.TabIndex = 9;
@@ -119,7 +119,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 572);
             this.Controls.Add(this.comboBoxCourse);
             this.Controls.Add(this.txtSubjectName);
             this.Controls.Add(this.dataGridViewSubjects);

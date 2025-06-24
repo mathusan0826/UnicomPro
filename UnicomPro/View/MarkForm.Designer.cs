@@ -44,7 +44,7 @@
             // dataGridViewMarks
             // 
             this.dataGridViewMarks.AutoSize = true;
-            this.dataGridViewMarks.Location = new System.Drawing.Point(281, 28);
+            this.dataGridViewMarks.Location = new System.Drawing.Point(261, 228);
             this.dataGridViewMarks.Name = "dataGridViewMarks";
             this.dataGridViewMarks.Size = new System.Drawing.Size(43, 16);
             this.dataGridViewMarks.TabIndex = 0;
@@ -53,7 +53,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(281, 70);
+            this.label2.Location = new System.Drawing.Point(261, 266);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 16);
             this.label2.TabIndex = 1;
@@ -62,7 +62,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(283, 118);
+            this.label3.Location = new System.Drawing.Point(263, 305);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(41, 16);
             this.label3.TabIndex = 2;
@@ -70,7 +70,7 @@
             // 
             // txtScore
             // 
-            this.txtScore.Location = new System.Drawing.Point(377, 22);
+            this.txtScore.Location = new System.Drawing.Point(343, 228);
             this.txtScore.Name = "txtScore";
             this.txtScore.Size = new System.Drawing.Size(117, 22);
             this.txtScore.TabIndex = 3;
@@ -78,7 +78,7 @@
             // comboBoxStudent
             // 
             this.comboBoxStudent.FormattingEnabled = true;
-            this.comboBoxStudent.Location = new System.Drawing.Point(380, 67);
+            this.comboBoxStudent.Location = new System.Drawing.Point(343, 266);
             this.comboBoxStudent.Name = "comboBoxStudent";
             this.comboBoxStudent.Size = new System.Drawing.Size(114, 24);
             this.comboBoxStudent.TabIndex = 4;
@@ -86,14 +86,14 @@
             // comboBoxExam
             // 
             this.comboBoxExam.FormattingEnabled = true;
-            this.comboBoxExam.Location = new System.Drawing.Point(380, 110);
+            this.comboBoxExam.Location = new System.Drawing.Point(343, 305);
             this.comboBoxExam.Name = "comboBoxExam";
             this.comboBoxExam.Size = new System.Drawing.Size(114, 24);
             this.comboBoxExam.TabIndex = 5;
             // 
             // btnAddMark
             // 
-            this.btnAddMark.Location = new System.Drawing.Point(171, 154);
+            this.btnAddMark.Location = new System.Drawing.Point(146, 354);
             this.btnAddMark.Name = "btnAddMark";
             this.btnAddMark.Size = new System.Drawing.Size(126, 26);
             this.btnAddMark.TabIndex = 6;
@@ -103,7 +103,7 @@
             // 
             // btnUpdateMark
             // 
-            this.btnUpdateMark.Location = new System.Drawing.Point(315, 154);
+            this.btnUpdateMark.Location = new System.Drawing.Point(343, 354);
             this.btnUpdateMark.Name = "btnUpdateMark";
             this.btnUpdateMark.Size = new System.Drawing.Size(151, 26);
             this.btnUpdateMark.TabIndex = 7;
@@ -113,7 +113,7 @@
             // 
             // btnDeleteMark
             // 
-            this.btnDeleteMark.Location = new System.Drawing.Point(482, 152);
+            this.btnDeleteMark.Location = new System.Drawing.Point(545, 354);
             this.btnDeleteMark.Name = "btnDeleteMark";
             this.btnDeleteMark.Size = new System.Drawing.Size(133, 28);
             this.btnDeleteMark.TabIndex = 8;
@@ -123,9 +123,9 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(39, 200);
+            this.dataGridView1.Location = new System.Drawing.Point(63, 388);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -138,7 +138,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(858, 628);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnDeleteMark);
             this.Controls.Add(this.btnUpdateMark);

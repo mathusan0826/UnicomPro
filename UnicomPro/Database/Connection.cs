@@ -8,7 +8,7 @@ namespace UnicomPro.Database
 {
     public static class Connection
     {
-        private const string ConnectionString = "Data Source=Datastore.db;Version=3;";
+        private const string ConnectionString = "Data Source=unicom.db;Version=3;";
 
         public static SQLiteConnection GetConnection()
         {

@@ -42,7 +42,7 @@
             // 
             // txtStudentName
             // 
-            this.txtStudentName.Location = new System.Drawing.Point(312, 34);
+            this.txtStudentName.Location = new System.Drawing.Point(351, 200);
             this.txtStudentName.Name = "txtStudentName";
             this.txtStudentName.Size = new System.Drawing.Size(151, 22);
             this.txtStudentName.TabIndex = 0;
@@ -50,7 +50,7 @@
             // comboBoxCourses
             // 
             this.comboBoxCourses.FormattingEnabled = true;
-            this.comboBoxCourses.Location = new System.Drawing.Point(312, 89);
+            this.comboBoxCourses.Location = new System.Drawing.Point(351, 243);
             this.comboBoxCourses.Name = "comboBoxCourses";
             this.comboBoxCourses.Size = new System.Drawing.Size(151, 24);
             this.comboBoxCourses.TabIndex = 2;
@@ -59,7 +59,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(185, 40);
+            this.label1.Location = new System.Drawing.Point(243, 206);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 16);
             this.label1.TabIndex = 3;
@@ -76,7 +76,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(185, 79);
+            this.label3.Location = new System.Drawing.Point(243, 251);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(50, 16);
             this.label3.TabIndex = 5;
@@ -84,7 +84,7 @@
             // 
             // btnAddStudent
             // 
-            this.btnAddStudent.Location = new System.Drawing.Point(199, 139);
+            this.btnAddStudent.Location = new System.Drawing.Point(208, 291);
             this.btnAddStudent.Name = "btnAddStudent";
             this.btnAddStudent.Size = new System.Drawing.Size(75, 23);
             this.btnAddStudent.TabIndex = 6;
@@ -94,7 +94,7 @@
             // 
             // btnUpdateStudent
             // 
-            this.btnUpdateStudent.Location = new System.Drawing.Point(312, 143);
+            this.btnUpdateStudent.Location = new System.Drawing.Point(351, 291);
             this.btnUpdateStudent.Name = "btnUpdateStudent";
             this.btnUpdateStudent.Size = new System.Drawing.Size(75, 23);
             this.btnUpdateStudent.TabIndex = 7;
@@ -104,7 +104,7 @@
             // 
             // btnDeleteStudent
             // 
-            this.btnDeleteStudent.Location = new System.Drawing.Point(408, 146);
+            this.btnDeleteStudent.Location = new System.Drawing.Point(471, 291);
             this.btnDeleteStudent.Name = "btnDeleteStudent";
             this.btnDeleteStudent.Size = new System.Drawing.Size(75, 23);
             this.btnDeleteStudent.TabIndex = 8;
@@ -114,9 +114,9 @@
             // 
             // dataGridViewStudents
             // 
-            this.dataGridViewStudents.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dataGridViewStudents.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
             this.dataGridViewStudents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewStudents.Location = new System.Drawing.Point(12, 188);
+            this.dataGridViewStudents.Location = new System.Drawing.Point(25, 320);
             this.dataGridViewStudents.Name = "dataGridViewStudents";
             this.dataGridViewStudents.RowHeadersWidth = 51;
             this.dataGridViewStudents.RowTemplate.Height = 24;
@@ -129,7 +129,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 582);
             this.Controls.Add(this.dataGridViewStudents);
             this.Controls.Add(this.btnDeleteStudent);
             this.Controls.Add(this.btnUpdateStudent);

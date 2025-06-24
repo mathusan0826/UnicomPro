@@ -89,6 +89,7 @@ namespace UnicomPro.View
             _timetableController.Update(selected);
             LoadTimetables();
             ClearInputs();
+            MessageBox.Show("Timetable saved successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnDelete_Click(object sender, EventArgs e)

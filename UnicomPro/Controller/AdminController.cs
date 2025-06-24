@@ -9,7 +9,8 @@ using UnicomPro.Models;
 namespace UnicomPro.Controller
 {
     public class AdminController
-    {
+    { 
+        //Add Admin
         public void AddAdmin(Admin admin)
         {
             using (var conn = Connection.GetConnection())
@@ -24,7 +25,7 @@ namespace UnicomPro.Controller
                 cmd.ExecuteNonQuery();
             }
         }
-
+        //Delite Admin
         public void DeleteAdmin(int adminId)
         {
             using (var conn = Connection.GetConnection())
@@ -36,7 +37,7 @@ namespace UnicomPro.Controller
                 cmd.ExecuteNonQuery();
             }
         }
-
+        //Update Admin
         public void UpdateAdmin(Admin admin)
         {
             using (var conn = Connection.GetConnection())

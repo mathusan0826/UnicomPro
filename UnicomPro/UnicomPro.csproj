@@ -107,6 +107,12 @@
     <Compile Include="View\LapHallAllocationForm.Designer.cs">
       <DependentUpon>LapHallAllocationForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\LectureDashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\LectureDashboardForm.Designer.cs">
+      <DependentUpon>LectureDashboardForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\LectureForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +136,18 @@
     </Compile>
     <Compile Include="View\MarkForm.Designer.cs">
       <DependentUpon>MarkForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\StaffDashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\StaffDashboardForm.Designer.cs">
+      <DependentUpon>StaffDashboardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\StudentDashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\StudentDashboardForm.Designer.cs">
+      <DependentUpon>StudentDashboardForm.cs</DependentUpon>
     </Compile>
     <Compile Include="View\StudentForm.cs">
       <SubType>Form</SubType>
@@ -174,6 +192,9 @@
     <EmbeddedResource Include="View\LapHallAllocationForm.resx">
       <DependentUpon>LapHallAllocationForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\LectureDashboardForm.resx">
+      <DependentUpon>LectureDashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\LectureForm.resx">
       <DependentUpon>LectureForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -186,6 +207,12 @@
     <EmbeddedResource Include="View\MarkForm.resx">
       <DependentUpon>MarkForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\StaffDashboardForm.resx">
+      <DependentUpon>StaffDashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\StudentDashboardForm.resx">
+      <DependentUpon>StudentDashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\StudentForm.resx">
       <DependentUpon>StudentForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -195,7 +222,6 @@
     <EmbeddedResource Include="View\TimetableForm.resx">
       <DependentUpon>TimetableForm.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="Datastore.db" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -206,6 +232,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="unicom.db" />
+    <None Include="unicom.db-journal" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

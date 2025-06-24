@@ -15,7 +15,7 @@ namespace UnicomPro.View
     public partial class MainDashboardForm : Form
     {
         private readonly MainDashboardController _controller;
-        //private readonly MainDashboardModel _currentUser;
+      
 
         public MainDashboardForm()
         {
@@ -175,6 +175,13 @@ namespace UnicomPro.View
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+            this.Hide();
         }
     }
 }

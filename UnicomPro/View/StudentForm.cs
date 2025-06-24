@@ -108,8 +108,10 @@ namespace UnicomPro.View
         private void ClearInputs()
         {
             txtStudentName.Clear();
-            
-            comboBoxCourses.SelectedIndex = 0;
+            if (comboBoxCourses.Items.Count > 0)
+                comboBoxCourses.SelectedIndex = 0;
+
+            //  comboBoxCourses.SelectedIndex = 0;
         }
 
         private void StudentForm_Load(object sender, EventArgs e)

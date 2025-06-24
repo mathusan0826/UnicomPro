@@ -143,5 +143,10 @@ namespace UnicomPro.View
         {
 
         }
+
+        private void txtLocationName1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

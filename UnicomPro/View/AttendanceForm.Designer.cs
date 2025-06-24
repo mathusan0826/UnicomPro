@@ -41,7 +41,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(216, 15);
+            this.label1.Location = new System.Drawing.Point(110, 179);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(109, 16);
             this.label1.TabIndex = 0;
@@ -50,7 +50,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(216, 61);
+            this.label2.Location = new System.Drawing.Point(110, 226);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(133, 16);
             this.label2.TabIndex = 1;
@@ -58,7 +58,7 @@
             // 
             // btnLoadStudents
             // 
-            this.btnLoadStudents.Location = new System.Drawing.Point(187, 114);
+            this.btnLoadStudents.Location = new System.Drawing.Point(113, 276);
             this.btnLoadStudents.Name = "btnLoadStudents";
             this.btnLoadStudents.Size = new System.Drawing.Size(180, 27);
             this.btnLoadStudents.TabIndex = 2;
@@ -68,7 +68,7 @@
             // 
             // btnSaveAttendance
             // 
-            this.btnSaveAttendance.Location = new System.Drawing.Point(412, 114);
+            this.btnSaveAttendance.Location = new System.Drawing.Point(347, 276);
             this.btnSaveAttendance.Name = "btnSaveAttendance";
             this.btnSaveAttendance.Size = new System.Drawing.Size(197, 27);
             this.btnSaveAttendance.TabIndex = 3;
@@ -78,9 +78,9 @@
             // 
             // dgvAttendance
             // 
-            this.dgvAttendance.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dgvAttendance.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
             this.dgvAttendance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAttendance.Location = new System.Drawing.Point(16, 171);
+            this.dgvAttendance.Location = new System.Drawing.Point(12, 318);
             this.dgvAttendance.Name = "dgvAttendance";
             this.dgvAttendance.RowHeadersWidth = 51;
             this.dgvAttendance.RowTemplate.Height = 24;
@@ -91,14 +91,14 @@
             // cmbSubject
             // 
             this.cmbSubject.FormattingEnabled = true;
-            this.cmbSubject.Location = new System.Drawing.Point(375, 12);
+            this.cmbSubject.Location = new System.Drawing.Point(310, 179);
             this.cmbSubject.Name = "cmbSubject";
             this.cmbSubject.Size = new System.Drawing.Size(234, 24);
             this.cmbSubject.TabIndex = 5;
             // 
             // datePicker
             // 
-            this.datePicker.Location = new System.Drawing.Point(375, 55);
+            this.datePicker.Location = new System.Drawing.Point(310, 226);
             this.datePicker.Name = "datePicker";
             this.datePicker.Size = new System.Drawing.Size(234, 22);
             this.datePicker.TabIndex = 6;
@@ -108,7 +108,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 599);
             this.Controls.Add(this.datePicker);
             this.Controls.Add(this.cmbSubject);
             this.Controls.Add(this.dgvAttendance);

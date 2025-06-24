@@ -20,27 +20,6 @@ namespace UnicomPro.View
             InitializeComponent();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            if (dataGridViewCourses.CurrentRow == null || string.IsNullOrWhiteSpace(txtCourseName.Text))
-            {
-                MessageBox.Show("Please select a course and enter a new name.");
-                return;
-            }
-
-            var selectedCourse = (Course)dataGridViewCourses.CurrentRow.DataBoundItem;
-            selectedCourse.CourseName = txtCourseName.Text.Trim();
-
-            _courseController.UpdateCourse(selectedCourse);
-            LoadCourses();
-            txtCourseName.Clear();
-        }
-
-        private void Course_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtCourseName.Text))
@@ -72,6 +51,40 @@ namespace UnicomPro.View
                 LoadCourses();
                 txtCourseName.Clear();
             }
+            dataGridViewCourses.Columns["CourseID"].HeaderText = "Course ID";
+            dataGridViewCourses.Columns["CourseID"].Visible = true;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewCourses.CurrentRow == null || string.IsNullOrWhiteSpace(txtCourseName.Text))
+            {
+                MessageBox.Show("Please select a course and enter a new name.");
+                return;
+            }
+
+            var selectedCourse = (Course)dataGridViewCourses.CurrentRow.DataBoundItem;
+            selectedCourse.CourseName = txtCourseName.Text.Trim();
+
+            _courseController.UpdateCourse(selectedCourse);
+            LoadCourses();
+            txtCourseName.Clear();
+        }
+
+        private void dataGridViewCourses_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridViewCourses.CurrentRow == null || string.IsNullOrWhiteSpace(txtCourseName.Text))
+            {
+                MessageBox.Show("Please select a course and enter a new name.");
+                return;
+            }
+
+            var selectedCourse = (Course)dataGridViewCourses.CurrentRow.DataBoundItem;
+            selectedCourse.CourseName = txtCourseName.Text.Trim();
+
+            _courseController.UpdateCourse(selectedCourse);
+            LoadCourses();
+            txtCourseName.Clear();
         }
         private void LoadCourses()
         {
@@ -80,7 +93,7 @@ namespace UnicomPro.View
             dataGridViewCourses.DataSource = courses;
         }
 
-        private void dataGridViewCourses_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridViewCourse_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (dataGridViewCourses.CurrentRow != null)
             {
@@ -92,11 +105,6 @@ namespace UnicomPro.View
         private void CourseForm_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-           
         }
     }
 }

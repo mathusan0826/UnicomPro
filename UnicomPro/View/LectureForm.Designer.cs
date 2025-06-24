@@ -42,7 +42,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(168, 36);
+            this.label1.Location = new System.Drawing.Point(168, 186);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(91, 16);
             this.label1.TabIndex = 0;
@@ -52,7 +52,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(168, 76);
+            this.label2.Location = new System.Drawing.Point(170, 226);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 16);
             this.label2.TabIndex = 1;
@@ -60,7 +60,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(153, 130);
+            this.btnAdd.Location = new System.Drawing.Point(153, 277);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(106, 23);
             this.btnAdd.TabIndex = 2;
@@ -70,7 +70,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(292, 130);
+            this.btnUpdate.Location = new System.Drawing.Point(301, 277);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(115, 23);
             this.btnUpdate.TabIndex = 3;
@@ -80,7 +80,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(428, 130);
+            this.btnDelete.Location = new System.Drawing.Point(449, 277);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(122, 23);
             this.btnDelete.TabIndex = 4;
@@ -90,7 +90,7 @@
             // 
             // txtLectureName
             // 
-            this.txtLectureName.Location = new System.Drawing.Point(320, 36);
+            this.txtLectureName.Location = new System.Drawing.Point(301, 186);
             this.txtLectureName.Name = "txtLectureName";
             this.txtLectureName.Size = new System.Drawing.Size(121, 22);
             this.txtLectureName.TabIndex = 5;
@@ -98,16 +98,16 @@
             // comboBoxCourse
             // 
             this.comboBoxCourse.FormattingEnabled = true;
-            this.comboBoxCourse.Location = new System.Drawing.Point(320, 76);
+            this.comboBoxCourse.Location = new System.Drawing.Point(301, 226);
             this.comboBoxCourse.Name = "comboBoxCourse";
             this.comboBoxCourse.Size = new System.Drawing.Size(121, 24);
             this.comboBoxCourse.TabIndex = 6;
             // 
             // dataGridViewLectures
             // 
-            this.dataGridViewLectures.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dataGridViewLectures.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
             this.dataGridViewLectures.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewLectures.Location = new System.Drawing.Point(153, 177);
+            this.dataGridViewLectures.Location = new System.Drawing.Point(153, 325);
             this.dataGridViewLectures.Name = "dataGridViewLectures";
             this.dataGridViewLectures.RowHeadersWidth = 51;
             this.dataGridViewLectures.RowTemplate.Height = 24;
@@ -120,7 +120,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 580);
             this.Controls.Add(this.dataGridViewLectures);
             this.Controls.Add(this.comboBoxCourse);
             this.Controls.Add(this.txtLectureName);
