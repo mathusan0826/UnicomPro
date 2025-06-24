@@ -68,19 +68,19 @@ namespace UnicomPro.View
 
         private void button7_Click(object sender, EventArgs e)
         {
-            LoadFormIntoPanel(new ExamForm());
+            //LoadFormIntoPanel(new ExamForm());
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            this.Close();
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+            this.Hide();
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-            LoginForm loginForm = new LoginForm();
-            loginForm.Show();
-            this.Hide();
+           
         }
     }
 }

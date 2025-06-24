@@ -103,6 +103,9 @@ namespace UnicomPro.View
 
         private void dataGridViewLectures_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            dataGridViewLectures.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewLectures.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+
             if (dataGridViewLectures.CurrentRow != null)
             {
                 var selected = (Lecture)dataGridViewLectures.CurrentRow.DataBoundItem;

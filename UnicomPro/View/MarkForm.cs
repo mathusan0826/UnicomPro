@@ -157,6 +157,13 @@ namespace UnicomPro.View
         {
             
         }
+        public void MakeReadOnly()
+        {
+            btnAddMark.Enabled = false; // Add
+            btnDeleteMark.Enabled = false; // Delete
+            btnUpdateMark.Enabled = false; // Update
+           // txtCourseName.Enabled = false; // Optional: disable text box
+        }
     }
     }
 

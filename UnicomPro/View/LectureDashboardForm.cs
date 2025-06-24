@@ -44,7 +44,7 @@ namespace UnicomPro.View
 
         private void button2_Click(object sender, EventArgs e)
         {
-            LoadFormIntoPanel(new ExamForm());
+            //LoadFormIntoPanel(new ExamForm());
             //btnAddExam.visible=false;
         }
 
@@ -55,16 +55,21 @@ namespace UnicomPro.View
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
             LoginForm loginForm = new LoginForm();
             loginForm.Show();
             this.Hide();
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+           
           
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            LoadFormIntoPanel(new TimetableForm());
         }
     }
 }

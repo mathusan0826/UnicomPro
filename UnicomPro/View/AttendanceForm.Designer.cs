@@ -35,13 +35,15 @@
             this.dgvAttendance = new System.Windows.Forms.DataGridView();
             this.cmbSubject = new System.Windows.Forms.ComboBox();
             this.datePicker = new System.Windows.Forms.DateTimePicker();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAttendance)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(110, 179);
+            this.label1.Location = new System.Drawing.Point(298, 184);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(109, 16);
             this.label1.TabIndex = 0;
@@ -50,7 +52,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(110, 226);
+            this.label2.Location = new System.Drawing.Point(298, 227);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(133, 16);
             this.label2.TabIndex = 1;
@@ -58,7 +60,7 @@
             // 
             // btnLoadStudents
             // 
-            this.btnLoadStudents.Location = new System.Drawing.Point(113, 276);
+            this.btnLoadStudents.Location = new System.Drawing.Point(236, 264);
             this.btnLoadStudents.Name = "btnLoadStudents";
             this.btnLoadStudents.Size = new System.Drawing.Size(180, 27);
             this.btnLoadStudents.TabIndex = 2;
@@ -68,7 +70,7 @@
             // 
             // btnSaveAttendance
             // 
-            this.btnSaveAttendance.Location = new System.Drawing.Point(347, 276);
+            this.btnSaveAttendance.Location = new System.Drawing.Point(454, 264);
             this.btnSaveAttendance.Name = "btnSaveAttendance";
             this.btnSaveAttendance.Size = new System.Drawing.Size(197, 27);
             this.btnSaveAttendance.TabIndex = 3;
@@ -91,17 +93,27 @@
             // cmbSubject
             // 
             this.cmbSubject.FormattingEnabled = true;
-            this.cmbSubject.Location = new System.Drawing.Point(310, 179);
+            this.cmbSubject.Location = new System.Drawing.Point(454, 176);
             this.cmbSubject.Name = "cmbSubject";
             this.cmbSubject.Size = new System.Drawing.Size(234, 24);
             this.cmbSubject.TabIndex = 5;
             // 
             // datePicker
             // 
-            this.datePicker.Location = new System.Drawing.Point(310, 226);
+            this.datePicker.Location = new System.Drawing.Point(454, 221);
             this.datePicker.Name = "datePicker";
             this.datePicker.Size = new System.Drawing.Size(234, 22);
             this.datePicker.TabIndex = 6;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::UnicomPro.Properties.Resources.attendance;
+            this.pictureBox1.Location = new System.Drawing.Point(-22, 141);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(252, 150);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
             // 
             // AttendanceForm
             // 
@@ -109,6 +121,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(800, 599);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.datePicker);
             this.Controls.Add(this.cmbSubject);
             this.Controls.Add(this.dgvAttendance);
@@ -120,6 +133,7 @@
             this.Text = "AttendanceForm";
             this.Load += new System.EventHandler(this.AttendanceForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAttendance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,5 +148,6 @@
         private System.Windows.Forms.DataGridView dgvAttendance;
         private System.Windows.Forms.ComboBox cmbSubject;
         private System.Windows.Forms.DateTimePicker datePicker;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

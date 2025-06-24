@@ -68,9 +68,9 @@
             // 
             this.button1.BackColor = System.Drawing.Color.DarkTurquoise;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(333, 220);
+            this.button1.Location = new System.Drawing.Point(514, 234);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(236, 45);
+            this.button1.Size = new System.Drawing.Size(114, 40);
             this.button1.TabIndex = 2;
             this.button1.Text = "Admin log in";
             this.button1.UseVisualStyleBackColor = false;
@@ -104,9 +104,9 @@
             // 
             this.button2.BackColor = System.Drawing.Color.DarkTurquoise;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(381, 271);
+            this.button2.Location = new System.Drawing.Point(514, 298);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(236, 45);
+            this.button2.Size = new System.Drawing.Size(114, 41);
             this.button2.TabIndex = 6;
             this.button2.Text = "Staff log in";
             this.button2.UseVisualStyleBackColor = false;
@@ -116,9 +116,9 @@
             // 
             this.button3.BackColor = System.Drawing.Color.DarkTurquoise;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(444, 322);
+            this.button3.Location = new System.Drawing.Point(514, 359);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(236, 45);
+            this.button3.Size = new System.Drawing.Size(131, 39);
             this.button3.TabIndex = 7;
             this.button3.Text = "Lecturers log in";
             this.button3.UseVisualStyleBackColor = false;
@@ -128,9 +128,9 @@
             // 
             this.button4.BackColor = System.Drawing.Color.DarkTurquoise;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(476, 373);
+            this.button4.Location = new System.Drawing.Point(514, 423);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(236, 45);
+            this.button4.Size = new System.Drawing.Size(131, 38);
             this.button4.TabIndex = 8;
             this.button4.Text = "Student log in";
             this.button4.UseVisualStyleBackColor = false;

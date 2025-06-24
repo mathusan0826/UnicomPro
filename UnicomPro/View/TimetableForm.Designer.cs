@@ -42,13 +42,15 @@
             this.txtStartTime = new System.Windows.Forms.TextBox();
             this.txtEndTime = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(153, 24);
+            this.label1.Location = new System.Drawing.Point(316, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 16);
             this.label1.TabIndex = 0;
@@ -57,7 +59,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(153, 64);
+            this.label2.Location = new System.Drawing.Point(316, 67);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(126, 16);
             this.label2.TabIndex = 1;
@@ -67,7 +69,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(153, 101);
+            this.label3.Location = new System.Drawing.Point(316, 101);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(169, 16);
             this.label3.TabIndex = 2;
@@ -76,7 +78,7 @@
             // cmbDay
             // 
             this.cmbDay.FormattingEnabled = true;
-            this.cmbDay.Location = new System.Drawing.Point(364, 170);
+            this.cmbDay.Location = new System.Drawing.Point(493, 170);
             this.cmbDay.Name = "cmbDay";
             this.cmbDay.Size = new System.Drawing.Size(121, 24);
             this.cmbDay.TabIndex = 5;
@@ -84,7 +86,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(150, 211);
+            this.btnAdd.Location = new System.Drawing.Point(184, 223);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(129, 23);
             this.btnAdd.TabIndex = 6;
@@ -94,7 +96,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(319, 211);
+            this.btnUpdate.Location = new System.Drawing.Point(328, 223);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(136, 23);
             this.btnUpdate.TabIndex = 7;
@@ -104,7 +106,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(483, 211);
+            this.btnDelete.Location = new System.Drawing.Point(493, 223);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(131, 23);
             this.btnDelete.TabIndex = 8;
@@ -115,7 +117,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(153, 137);
+            this.label4.Location = new System.Drawing.Point(316, 137);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(166, 16);
             this.label4.TabIndex = 11;
@@ -129,34 +131,34 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(763, 186);
+            this.dataGridView1.Size = new System.Drawing.Size(830, 204);
             this.dataGridView1.TabIndex = 13;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // txtCourseID
             // 
-            this.txtCourseID.Location = new System.Drawing.Point(364, 21);
+            this.txtCourseID.Location = new System.Drawing.Point(493, 21);
             this.txtCourseID.Name = "txtCourseID";
             this.txtCourseID.Size = new System.Drawing.Size(121, 22);
             this.txtCourseID.TabIndex = 14;
             // 
             // txtSubject
             // 
-            this.txtSubject.Location = new System.Drawing.Point(364, 64);
+            this.txtSubject.Location = new System.Drawing.Point(493, 64);
             this.txtSubject.Name = "txtSubject";
             this.txtSubject.Size = new System.Drawing.Size(121, 22);
             this.txtSubject.TabIndex = 15;
             // 
             // txtStartTime
             // 
-            this.txtStartTime.Location = new System.Drawing.Point(364, 101);
+            this.txtStartTime.Location = new System.Drawing.Point(493, 98);
             this.txtStartTime.Name = "txtStartTime";
             this.txtStartTime.Size = new System.Drawing.Size(121, 22);
             this.txtStartTime.TabIndex = 16;
             // 
             // txtEndTime
             // 
-            this.txtEndTime.Location = new System.Drawing.Point(364, 137);
+            this.txtEndTime.Location = new System.Drawing.Point(493, 137);
             this.txtEndTime.Name = "txtEndTime";
             this.txtEndTime.Size = new System.Drawing.Size(121, 22);
             this.txtEndTime.TabIndex = 17;
@@ -164,18 +166,28 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(153, 170);
+            this.label5.Location = new System.Drawing.Point(316, 170);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(73, 16);
             this.label5.TabIndex = 18;
             this.label5.Text = "Select Day";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::UnicomPro.Properties.Resources.Time_table;
+            this.pictureBox1.Location = new System.Drawing.Point(65, -6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(210, 223);
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
             // 
             // TimetableForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(854, 519);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtEndTime);
             this.Controls.Add(this.txtStartTime);
@@ -194,6 +206,7 @@
             this.Name = "TimetableForm";
             this.Text = "TimetableForm";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -215,5 +228,6 @@
         private System.Windows.Forms.TextBox txtStartTime;
         private System.Windows.Forms.TextBox txtEndTime;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

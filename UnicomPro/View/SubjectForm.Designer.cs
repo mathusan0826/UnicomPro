@@ -36,13 +36,15 @@
             this.dataGridViewSubjects = new System.Windows.Forms.DataGridView();
             this.txtSubjectName = new System.Windows.Forms.TextBox();
             this.comboBoxCourse = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSubjects)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelSubjectName
             // 
             this.labelSubjectName.AutoSize = true;
-            this.labelSubjectName.Location = new System.Drawing.Point(196, 162);
+            this.labelSubjectName.Location = new System.Drawing.Point(436, 138);
             this.labelSubjectName.Name = "labelSubjectName";
             this.labelSubjectName.Size = new System.Drawing.Size(95, 16);
             this.labelSubjectName.TabIndex = 0;
@@ -51,7 +53,7 @@
             // labelCourse
             // 
             this.labelCourse.AutoSize = true;
-            this.labelCourse.Location = new System.Drawing.Point(196, 205);
+            this.labelCourse.Location = new System.Drawing.Point(436, 197);
             this.labelCourse.Name = "labelCourse";
             this.labelCourse.Size = new System.Drawing.Size(53, 16);
             this.labelCourse.TabIndex = 1;
@@ -59,7 +61,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(199, 252);
+            this.btnAdd.Location = new System.Drawing.Point(500, 252);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 4;
@@ -69,7 +71,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(309, 252);
+            this.btnUpdate.Location = new System.Drawing.Point(602, 252);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnUpdate.TabIndex = 5;
@@ -79,7 +81,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(411, 252);
+            this.btnDelete.Location = new System.Drawing.Point(702, 252);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 6;
@@ -101,7 +103,7 @@
             // 
             // txtSubjectName
             // 
-            this.txtSubjectName.Location = new System.Drawing.Point(309, 156);
+            this.txtSubjectName.Location = new System.Drawing.Point(577, 138);
             this.txtSubjectName.Name = "txtSubjectName";
             this.txtSubjectName.Size = new System.Drawing.Size(200, 22);
             this.txtSubjectName.TabIndex = 8;
@@ -109,10 +111,19 @@
             // comboBoxCourse
             // 
             this.comboBoxCourse.FormattingEnabled = true;
-            this.comboBoxCourse.Location = new System.Drawing.Point(309, 205);
+            this.comboBoxCourse.Location = new System.Drawing.Point(577, 197);
             this.comboBoxCourse.Name = "comboBoxCourse";
             this.comboBoxCourse.Size = new System.Drawing.Size(200, 24);
             this.comboBoxCourse.TabIndex = 9;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::UnicomPro.Properties.Resources.Subject;
+            this.pictureBox1.Location = new System.Drawing.Point(99, 93);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(280, 182);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
             // 
             // SubjectForm
             // 
@@ -120,6 +131,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(800, 572);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.comboBoxCourse);
             this.Controls.Add(this.txtSubjectName);
             this.Controls.Add(this.dataGridViewSubjects);
@@ -133,6 +145,7 @@
             this.Text = "SubjectForm";
             this.Load += new System.EventHandler(this.SubjectForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSubjects)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -148,5 +161,6 @@
         private System.Windows.Forms.DataGridView dataGridViewSubjects;
         private System.Windows.Forms.TextBox txtSubjectName;
         private System.Windows.Forms.ComboBox comboBoxCourse;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

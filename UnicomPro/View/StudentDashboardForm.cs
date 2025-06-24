@@ -33,20 +33,34 @@ namespace UnicomPro.View
 
         private void button1_Click(object sender, EventArgs e)
         {
+            CourseForm courseForm = new CourseForm();
+            courseForm.MakeReadOnly(); // 🔐 disables buttons
+            
             //LoadFormIntoPanel(new CourseForm());
-            LoadFormIntoPanel(new CourseForm());
+            LoadFormIntoPanel(courseForm);
+
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            LoadFormIntoPanel(new TimetableForm());
             
+            TimetableForm timetableForm = new TimetableForm();
+            timetableForm.MakeReadOnly(); // 🔐 disables buttons
+            LoadFormIntoPanel(timetableForm);
+            //LoadFormIntoPanel(new CourseForm());
+
+
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            LoadFormIntoPanel(new MarkForm());
+            MarkForm markForm = new MarkForm();
+            markForm.MakeReadOnly(); // 🔐 disables buttons
+
+            //LoadFormIntoPanel(new CourseForm());
+            
+            LoadFormIntoPanel(markForm);
         }
 
         private void StudentDashboardForm_Load(object sender, EventArgs e)
@@ -71,14 +85,14 @@ namespace UnicomPro.View
 
         private void button4_Click(object sender, EventArgs e)
         {
-            this.Close();
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+            this.Hide();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            LoginForm loginForm = new LoginForm();
-            loginForm.Show();
-            this.Hide();
+           
         }
     }
 }

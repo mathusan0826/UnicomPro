@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button8 = new System.Windows.Forms.Button();
             this.lblWelcome = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -40,9 +40,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -51,11 +48,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.panel1.Controls.Add(this.button10);
-            this.panel1.Controls.Add(this.button9);
             this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.lblWelcome);
-            this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.button4);
@@ -68,6 +62,16 @@
             this.panel1.Size = new System.Drawing.Size(295, 592);
             this.panel1.TabIndex = 0;
             // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(76, 502);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(75, 38);
+            this.button8.TabIndex = 10;
+            this.button8.Text = "Log out";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
             // lblWelcome
             // 
             this.lblWelcome.AutoSize = true;
@@ -78,16 +82,6 @@
             this.lblWelcome.Size = new System.Drawing.Size(160, 38);
             this.lblWelcome.TabIndex = 9;
             this.lblWelcome.Text = "Welcome";
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(47, 490);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(143, 30);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "Manage Exam";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
@@ -179,35 +173,6 @@
             this.panel3.TabIndex = 1;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(99, 542);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 38);
-            this.button8.TabIndex = 10;
-            this.button8.Text = "Log out";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(188, 532);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(8, 8);
-            this.button9.TabIndex = 11;
-            this.button9.Text = "button9";
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.Location = new System.Drawing.Point(82, 122);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 31);
-            this.button10.TabIndex = 12;
-            this.button10.Text = "Log in";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
-            // 
             // StaffDashboardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -232,7 +197,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
@@ -241,7 +205,5 @@
         private System.Windows.Forms.Label lblWelcome;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
     }
 }

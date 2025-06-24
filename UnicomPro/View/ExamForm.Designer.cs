@@ -34,13 +34,15 @@
             this.btnUpdateExam = new System.Windows.Forms.Button();
             this.btnDeleteExam = new System.Windows.Forms.Button();
             this.dataGridViewExams = new System.Windows.Forms.DataGridView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewExams)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(187, 207);
+            this.label1.Location = new System.Drawing.Point(459, 188);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 16);
             this.label1.TabIndex = 0;
@@ -49,14 +51,14 @@
             // 
             // txtExamName
             // 
-            this.txtExamName.Location = new System.Drawing.Point(306, 207);
+            this.txtExamName.Location = new System.Drawing.Point(531, 182);
             this.txtExamName.Name = "txtExamName";
             this.txtExamName.Size = new System.Drawing.Size(244, 22);
             this.txtExamName.TabIndex = 1;
             // 
             // btnAddExam
             // 
-            this.btnAddExam.Location = new System.Drawing.Point(190, 255);
+            this.btnAddExam.Location = new System.Drawing.Point(462, 236);
             this.btnAddExam.Name = "btnAddExam";
             this.btnAddExam.Size = new System.Drawing.Size(80, 26);
             this.btnAddExam.TabIndex = 2;
@@ -66,7 +68,7 @@
             // 
             // btnUpdateExam
             // 
-            this.btnUpdateExam.Location = new System.Drawing.Point(336, 255);
+            this.btnUpdateExam.Location = new System.Drawing.Point(577, 236);
             this.btnUpdateExam.Name = "btnUpdateExam";
             this.btnUpdateExam.Size = new System.Drawing.Size(77, 26);
             this.btnUpdateExam.TabIndex = 3;
@@ -76,7 +78,7 @@
             // 
             // btnDeleteExam
             // 
-            this.btnDeleteExam.Location = new System.Drawing.Point(463, 255);
+            this.btnDeleteExam.Location = new System.Drawing.Point(688, 236);
             this.btnDeleteExam.Name = "btnDeleteExam";
             this.btnDeleteExam.Size = new System.Drawing.Size(87, 26);
             this.btnDeleteExam.TabIndex = 4;
@@ -96,12 +98,23 @@
             this.dataGridViewExams.TabIndex = 5;
             this.dataGridViewExams.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewExams_CellContentClick);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::UnicomPro.Properties.Resources.Exam;
+            this.pictureBox1.Location = new System.Drawing.Point(119, 94);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(248, 181);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
             // ExamForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(842, 534);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridViewExams);
             this.Controls.Add(this.btnDeleteExam);
             this.Controls.Add(this.btnUpdateExam);
@@ -112,6 +125,7 @@
             this.Name = "ExamForm";
             this.Text = "ExamForm";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewExams)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -125,5 +139,6 @@
         private System.Windows.Forms.Button btnUpdateExam;
         private System.Windows.Forms.Button btnDeleteExam;
         private System.Windows.Forms.DataGridView dataGridViewExams;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

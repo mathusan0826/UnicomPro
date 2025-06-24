@@ -20,11 +20,12 @@ namespace UnicomPro.View
         public MainDashboardForm()
         {
             InitializeComponent();
+            
            // _currentUser = userModel;
            // _controller = new MainDashboardController(userModel.Role);
 
-           // lblWelcome.Text = $"Welcome, {_currentUser.FullName} ({_currentUser.Role})";
-         //   _controller.ApplyRoleRestrictions(this);
+            // lblWelcome.Text = $"Welcome, {_currentUser.FullName} ({_currentUser.Role})";
+            //   _controller.ApplyRoleRestrictions(this);
         }
         private void LoadFormIntoPanel(Form formToLoad)
         {
@@ -110,7 +111,9 @@ namespace UnicomPro.View
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            this.Close();
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+            this.Hide();
         }
 
         private void btnLecture_Click(object sender, EventArgs e)
@@ -179,9 +182,7 @@ namespace UnicomPro.View
 
         private void button4_Click_1(object sender, EventArgs e)
         {
-            LoginForm loginForm = new LoginForm();
-            loginForm.Show();
-            this.Hide();
+          
         }
     }
 }

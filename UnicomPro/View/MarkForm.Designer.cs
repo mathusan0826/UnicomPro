@@ -38,13 +38,15 @@
             this.btnUpdateMark = new System.Windows.Forms.Button();
             this.btnDeleteMark = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridViewMarks
             // 
             this.dataGridViewMarks.AutoSize = true;
-            this.dataGridViewMarks.Location = new System.Drawing.Point(261, 228);
+            this.dataGridViewMarks.Location = new System.Drawing.Point(395, 253);
             this.dataGridViewMarks.Name = "dataGridViewMarks";
             this.dataGridViewMarks.Size = new System.Drawing.Size(43, 16);
             this.dataGridViewMarks.TabIndex = 0;
@@ -53,7 +55,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(261, 266);
+            this.label2.Location = new System.Drawing.Point(395, 283);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 16);
             this.label2.TabIndex = 1;
@@ -62,7 +64,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(263, 305);
+            this.label3.Location = new System.Drawing.Point(395, 313);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(41, 16);
             this.label3.TabIndex = 2;
@@ -70,7 +72,7 @@
             // 
             // txtScore
             // 
-            this.txtScore.Location = new System.Drawing.Point(343, 228);
+            this.txtScore.Location = new System.Drawing.Point(478, 247);
             this.txtScore.Name = "txtScore";
             this.txtScore.Size = new System.Drawing.Size(117, 22);
             this.txtScore.TabIndex = 3;
@@ -78,7 +80,7 @@
             // comboBoxStudent
             // 
             this.comboBoxStudent.FormattingEnabled = true;
-            this.comboBoxStudent.Location = new System.Drawing.Point(343, 266);
+            this.comboBoxStudent.Location = new System.Drawing.Point(478, 275);
             this.comboBoxStudent.Name = "comboBoxStudent";
             this.comboBoxStudent.Size = new System.Drawing.Size(114, 24);
             this.comboBoxStudent.TabIndex = 4;
@@ -86,7 +88,7 @@
             // comboBoxExam
             // 
             this.comboBoxExam.FormattingEnabled = true;
-            this.comboBoxExam.Location = new System.Drawing.Point(343, 305);
+            this.comboBoxExam.Location = new System.Drawing.Point(478, 305);
             this.comboBoxExam.Name = "comboBoxExam";
             this.comboBoxExam.Size = new System.Drawing.Size(114, 24);
             this.comboBoxExam.TabIndex = 5;
@@ -133,12 +135,22 @@
             this.dataGridView1.TabIndex = 9;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::UnicomPro.Properties.Resources.Mark;
+            this.pictureBox1.Location = new System.Drawing.Point(146, 162);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(226, 186);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
             // MarkForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(858, 628);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnDeleteMark);
             this.Controls.Add(this.btnUpdateMark);
@@ -153,6 +165,7 @@
             this.Text = "MarkForm";
             this.Load += new System.EventHandler(this.MarkForm_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -170,5 +183,6 @@
         private System.Windows.Forms.Button btnUpdateMark;
         private System.Windows.Forms.Button btnDeleteMark;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

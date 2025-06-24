@@ -14,11 +14,17 @@ namespace UnicomPro.View
 {
     public partial class CourseForm : Form
     {
+      
+        
         private readonly CourseController _courseController = new CourseController();
         public CourseForm()
         {
             InitializeComponent();
+            LoadCourses();
+
         }
+       
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -105,6 +111,13 @@ namespace UnicomPro.View
         private void CourseForm_Load(object sender, EventArgs e)
         {
 
+        }
+        public void MakeReadOnly()
+        {
+            button1.Enabled = false; // Add
+            button2.Enabled = false; // Delete
+            button3.Enabled = false; // Update
+           // txtCourseName.Enabled = false; // Optional: disable text box
         }
     }
 }

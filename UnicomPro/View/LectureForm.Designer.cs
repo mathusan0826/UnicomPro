@@ -36,13 +36,15 @@
             this.txtLectureName = new System.Windows.Forms.TextBox();
             this.comboBoxCourse = new System.Windows.Forms.ComboBox();
             this.dataGridViewLectures = new System.Windows.Forms.DataGridView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLectures)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(168, 186);
+            this.label1.Location = new System.Drawing.Point(375, 176);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(91, 16);
             this.label1.TabIndex = 0;
@@ -52,7 +54,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(170, 226);
+            this.label2.Location = new System.Drawing.Point(375, 209);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 16);
             this.label2.TabIndex = 1;
@@ -60,7 +62,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(153, 277);
+            this.btnAdd.Location = new System.Drawing.Point(153, 259);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(106, 23);
             this.btnAdd.TabIndex = 2;
@@ -70,7 +72,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(301, 277);
+            this.btnUpdate.Location = new System.Drawing.Point(351, 259);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(115, 23);
             this.btnUpdate.TabIndex = 3;
@@ -80,7 +82,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(449, 277);
+            this.btnDelete.Location = new System.Drawing.Point(519, 259);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(122, 23);
             this.btnDelete.TabIndex = 4;
@@ -90,7 +92,7 @@
             // 
             // txtLectureName
             // 
-            this.txtLectureName.Location = new System.Drawing.Point(301, 186);
+            this.txtLectureName.Location = new System.Drawing.Point(519, 170);
             this.txtLectureName.Name = "txtLectureName";
             this.txtLectureName.Size = new System.Drawing.Size(121, 22);
             this.txtLectureName.TabIndex = 5;
@@ -98,7 +100,7 @@
             // comboBoxCourse
             // 
             this.comboBoxCourse.FormattingEnabled = true;
-            this.comboBoxCourse.Location = new System.Drawing.Point(301, 226);
+            this.comboBoxCourse.Location = new System.Drawing.Point(519, 201);
             this.comboBoxCourse.Name = "comboBoxCourse";
             this.comboBoxCourse.Size = new System.Drawing.Size(121, 24);
             this.comboBoxCourse.TabIndex = 6;
@@ -107,7 +109,7 @@
             // 
             this.dataGridViewLectures.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
             this.dataGridViewLectures.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewLectures.Location = new System.Drawing.Point(153, 325);
+            this.dataGridViewLectures.Location = new System.Drawing.Point(153, 312);
             this.dataGridViewLectures.Name = "dataGridViewLectures";
             this.dataGridViewLectures.RowHeadersWidth = 51;
             this.dataGridViewLectures.RowTemplate.Height = 24;
@@ -115,12 +117,22 @@
             this.dataGridViewLectures.TabIndex = 7;
             this.dataGridViewLectures.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewLectures_CellContentClick);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::UnicomPro.Properties.Resources.lecture;
+            this.pictureBox1.Location = new System.Drawing.Point(132, 33);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(227, 220);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
             // LectureForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(800, 580);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridViewLectures);
             this.Controls.Add(this.comboBoxCourse);
             this.Controls.Add(this.txtLectureName);
@@ -132,6 +144,7 @@
             this.Name = "LectureForm";
             this.Text = "LectureForm";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLectures)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -147,5 +160,6 @@
         private System.Windows.Forms.TextBox txtLectureName;
         private System.Windows.Forms.ComboBox comboBoxCourse;
         private System.Windows.Forms.DataGridView dataGridViewLectures;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

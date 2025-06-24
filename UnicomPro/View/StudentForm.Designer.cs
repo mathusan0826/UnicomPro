@@ -37,12 +37,14 @@
             this.btnUpdateStudent = new System.Windows.Forms.Button();
             this.btnDeleteStudent = new System.Windows.Forms.Button();
             this.dataGridViewStudents = new System.Windows.Forms.DataGridView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStudents)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtStudentName
             // 
-            this.txtStudentName.Location = new System.Drawing.Point(351, 200);
+            this.txtStudentName.Location = new System.Drawing.Point(537, 200);
             this.txtStudentName.Name = "txtStudentName";
             this.txtStudentName.Size = new System.Drawing.Size(151, 22);
             this.txtStudentName.TabIndex = 0;
@@ -50,7 +52,7 @@
             // comboBoxCourses
             // 
             this.comboBoxCourses.FormattingEnabled = true;
-            this.comboBoxCourses.Location = new System.Drawing.Point(351, 243);
+            this.comboBoxCourses.Location = new System.Drawing.Point(537, 243);
             this.comboBoxCourses.Name = "comboBoxCourses";
             this.comboBoxCourses.Size = new System.Drawing.Size(151, 24);
             this.comboBoxCourses.TabIndex = 2;
@@ -59,7 +61,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(243, 206);
+            this.label1.Location = new System.Drawing.Point(411, 206);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 16);
             this.label1.TabIndex = 3;
@@ -76,7 +78,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(243, 251);
+            this.label3.Location = new System.Drawing.Point(411, 251);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(50, 16);
             this.label3.TabIndex = 5;
@@ -84,7 +86,7 @@
             // 
             // btnAddStudent
             // 
-            this.btnAddStudent.Location = new System.Drawing.Point(208, 291);
+            this.btnAddStudent.Location = new System.Drawing.Point(437, 291);
             this.btnAddStudent.Name = "btnAddStudent";
             this.btnAddStudent.Size = new System.Drawing.Size(75, 23);
             this.btnAddStudent.TabIndex = 6;
@@ -94,7 +96,7 @@
             // 
             // btnUpdateStudent
             // 
-            this.btnUpdateStudent.Location = new System.Drawing.Point(351, 291);
+            this.btnUpdateStudent.Location = new System.Drawing.Point(532, 291);
             this.btnUpdateStudent.Name = "btnUpdateStudent";
             this.btnUpdateStudent.Size = new System.Drawing.Size(75, 23);
             this.btnUpdateStudent.TabIndex = 7;
@@ -104,7 +106,7 @@
             // 
             // btnDeleteStudent
             // 
-            this.btnDeleteStudent.Location = new System.Drawing.Point(471, 291);
+            this.btnDeleteStudent.Location = new System.Drawing.Point(613, 291);
             this.btnDeleteStudent.Name = "btnDeleteStudent";
             this.btnDeleteStudent.Size = new System.Drawing.Size(75, 23);
             this.btnDeleteStudent.TabIndex = 8;
@@ -124,12 +126,22 @@
             this.dataGridViewStudents.TabIndex = 9;
             this.dataGridViewStudents.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewStudents_CellContentClick);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::UnicomPro.Properties.Resources.student;
+            this.pictureBox1.Location = new System.Drawing.Point(76, 134);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(273, 180);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
             // StudentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(800, 582);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridViewStudents);
             this.Controls.Add(this.btnDeleteStudent);
             this.Controls.Add(this.btnUpdateStudent);
@@ -143,6 +155,7 @@
             this.Text = "StudentForm";
             this.Load += new System.EventHandler(this.StudentForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStudents)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -159,5 +172,6 @@
         private System.Windows.Forms.Button btnUpdateStudent;
         private System.Windows.Forms.Button btnDeleteStudent;
         private System.Windows.Forms.DataGridView dataGridViewStudents;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -36,14 +36,16 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.dataGridViewAdmins = new System.Windows.Forms.DataGridView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAdmins)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Thistle;
-            this.label1.Location = new System.Drawing.Point(245, 139);
+            this.label1.Location = new System.Drawing.Point(239, 139);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(73, 16);
             this.label1.TabIndex = 0;
@@ -68,7 +70,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Thistle;
-            this.label2.Location = new System.Drawing.Point(245, 181);
+            this.label2.Location = new System.Drawing.Point(239, 181);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 16);
             this.label2.TabIndex = 3;
@@ -88,7 +90,7 @@
             // btnUpdate
             // 
             this.btnUpdate.BackColor = System.Drawing.Color.Violet;
-            this.btnUpdate.Location = new System.Drawing.Point(328, 216);
+            this.btnUpdate.Location = new System.Drawing.Point(333, 216);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(94, 27);
             this.btnUpdate.TabIndex = 5;
@@ -119,12 +121,23 @@
             this.dataGridViewAdmins.TabIndex = 7;
             this.dataGridViewAdmins.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewAdmins_CellContentClick);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::UnicomPro.Properties.Resources.admin;
+            this.pictureBox1.Location = new System.Drawing.Point(21, 82);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(152, 177);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
             // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(800, 536);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridViewAdmins);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
@@ -137,6 +150,7 @@
             this.Text = "AdminForm";
             this.Load += new System.EventHandler(this.AdminForm_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAdmins)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -152,5 +166,6 @@
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.DataGridView dataGridViewAdmins;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
