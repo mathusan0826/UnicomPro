@@ -108,9 +108,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::UnicomPro.Properties.Resources.attendance;
-            this.pictureBox1.Location = new System.Drawing.Point(-22, 141);
+            this.pictureBox1.Location = new System.Drawing.Point(-22, 116);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(252, 150);
+            this.pictureBox1.Size = new System.Drawing.Size(252, 175);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;

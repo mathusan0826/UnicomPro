@@ -4,6 +4,7 @@ using System.Data.SQLite;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using UnicomPro.Database;
 using UnicomPro.Models;
 
@@ -16,25 +17,32 @@ namespace UnicomPro.Controller
         {
             var list = new List<Timetable>();
 
-            using (var conn = Connection.GetConnection())
+            try
             {
-                conn.Open();
-                var cmd = new SQLiteCommand("SELECT * FROM Timetable", conn);
-                var reader = cmd.ExecuteReader();
-
-                while (reader.Read())
+                using (var conn = Connection.GetConnection())
                 {
-                    var t = new Timetable
+                    conn.Open();
+                    var cmd = new SQLiteCommand("SELECT * FROM Timetable", conn);
+                    var reader = cmd.ExecuteReader();
+
+                    while (reader.Read())
                     {
-                        TimetableID = Convert.ToInt32(reader["TimetableID"]),
-                        CourseID = Convert.ToInt32(reader["CourseID"]),
-                        Subject = reader["Subject"].ToString(),
-                        Day = reader["Day"].ToString(),
-                        StartTime = reader["StartTime"].ToString(),
-                        EndTime = reader["EndTime"].ToString()
-                    };
-                    list.Add(t);
+                        var t = new Timetable
+                        {
+                            TimetableID = Convert.ToInt32(reader["TimetableID"]),
+                            CourseID = Convert.ToInt32(reader["CourseID"]),
+                            Subject = reader["Subject"].ToString(),
+                            Day = reader["Day"].ToString(),
+                            StartTime = reader["StartTime"].ToString(),
+                            EndTime = reader["EndTime"].ToString()
+                        };
+                        list.Add(t);
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading timetables: " + ex.Message);
             }
 
             return list;
@@ -42,55 +50,88 @@ namespace UnicomPro.Controller
 
         public void Add(Timetable t)
         {
-            using (var conn = Connection.GetConnection())
+            try
             {
-                conn.Open();
-                var cmd = new SQLiteCommand("INSERT INTO Timetable (CourseID, Subject, Day, StartTime, EndTime) VALUES (@courseId, @subject, @day, @start, @end)", conn);
-                cmd.Parameters.AddWithValue("@courseId", t.CourseID);
-                cmd.Parameters.AddWithValue("@subject", t.Subject);
-                cmd.Parameters.AddWithValue("@day", t.Day);
-                cmd.Parameters.AddWithValue("@start", t.StartTime);
-                cmd.Parameters.AddWithValue("@end", t.EndTime);
-                cmd.ExecuteNonQuery();
+                using (var conn = Connection.GetConnection())
+                {
+                    conn.Open();
+                    var cmd = new SQLiteCommand(
+                        "INSERT INTO Timetable (CourseID, Subject, Day, StartTime, EndTime) VALUES (@courseId, @subject, @day, @start, @end)", conn);
+
+                    cmd.Parameters.AddWithValue("@courseId", t.CourseID);
+                    cmd.Parameters.AddWithValue("@subject", t.Subject);
+                    cmd.Parameters.AddWithValue("@day", t.Day);
+                    cmd.Parameters.AddWithValue("@start", t.StartTime);
+                    cmd.Parameters.AddWithValue("@end", t.EndTime);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error adding timetable: " + ex.Message);
             }
         }
 
         public void Update(Timetable t)
         {
-            using (var conn = Connection.GetConnection())
+            try
             {
-                conn.Open();
-                var cmd = new SQLiteCommand("UPDATE Timetable SET CourseID = @courseId, Subject = @subject, Day = @day, StartTime = @start, EndTime = @end WHERE TimetableID = @id", conn);
-                cmd.Parameters.AddWithValue("@courseId", t.CourseID);
-                cmd.Parameters.AddWithValue("@subject", t.Subject);
-                cmd.Parameters.AddWithValue("@day", t.Day);
-                cmd.Parameters.AddWithValue("@start", t.StartTime);
-                cmd.Parameters.AddWithValue("@end", t.EndTime);
-                cmd.Parameters.AddWithValue("@id", t.TimetableID);
-                cmd.ExecuteNonQuery();
+                using (var conn = Connection.GetConnection())
+                {
+                    conn.Open();
+                    var cmd = new SQLiteCommand(
+                        "UPDATE Timetable SET CourseID = @courseId, Subject = @subject, Day = @day, StartTime = @start, EndTime = @end WHERE TimetableID = @id", conn);
+
+                    cmd.Parameters.AddWithValue("@courseId", t.CourseID);
+                    cmd.Parameters.AddWithValue("@subject", t.Subject);
+                    cmd.Parameters.AddWithValue("@day", t.Day);
+                    cmd.Parameters.AddWithValue("@start", t.StartTime);
+                    cmd.Parameters.AddWithValue("@end", t.EndTime);
+                    cmd.Parameters.AddWithValue("@id", t.TimetableID);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error updating timetable: " + ex.Message);
             }
         }
 
         public void Delete(int timetableId)
         {
-            using (var conn = Connection.GetConnection())
+            try
             {
-                conn.Open();
-                var cmd = new SQLiteCommand("DELETE FROM Timetables WHERE TimetableID = @id", conn);
-                cmd.Parameters.AddWithValue("@id", timetableId);
-                cmd.ExecuteNonQuery();
+                using (var conn = Connection.GetConnection())
+                {
+                    conn.Open();
+                    var cmd = new SQLiteCommand("DELETE FROM Timetable WHERE TimetableID = @id", conn);
+                    cmd.Parameters.AddWithValue("@id", timetableId);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error deleting timetable: " + ex.Message);
             }
         }
 
         public int GetCourseIdByName(string courseName)
         {
-            using (var conn = Connection.GetConnection())
+            try
             {
-                conn.Open();
-                var cmd = new SQLiteCommand("SELECT CourseID FROM Courses WHERE CourseName = @name", conn);
-                cmd.Parameters.AddWithValue("@name", courseName);
-                var result = cmd.ExecuteScalar();
-                return result != null ? Convert.ToInt32(result) : -1;
+                using (var conn = Connection.GetConnection())
+                {
+                    conn.Open();
+                    var cmd = new SQLiteCommand("SELECT CourseID FROM Courses WHERE CourseName = @name", conn);
+                    cmd.Parameters.AddWithValue("@name", courseName);
+                    var result = cmd.ExecuteScalar();
+                    return result != null ? Convert.ToInt32(result) : -1;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error finding CourseID: " + ex.Message);
+                return -1;
             }
         }
     }

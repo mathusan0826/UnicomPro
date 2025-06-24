@@ -120,9 +120,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::UnicomPro.Properties.Resources.lecture;
-            this.pictureBox1.Location = new System.Drawing.Point(132, 33);
+            this.pictureBox1.Location = new System.Drawing.Point(128, 26);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(227, 220);
+            this.pictureBox1.Size = new System.Drawing.Size(229, 227);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
