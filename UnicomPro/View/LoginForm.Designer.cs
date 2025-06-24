@@ -93,6 +93,7 @@
             this.textPass.Size = new System.Drawing.Size(235, 22);
             this.textPass.TabIndex = 4;
             this.textPass.UseSystemPasswordChar = true;
+            this.textPass.TextChanged += new System.EventHandler(this.textPass_TextChanged);
             // 
             // imageList1
             // 

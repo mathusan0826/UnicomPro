@@ -118,5 +118,10 @@ namespace UnicomPro.View
             }
 
         }
+
+        private void textPass_TextChanged(object sender, EventArgs e)
+        {
+//
+        }
     }
 }
